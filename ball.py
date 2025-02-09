@@ -17,7 +17,7 @@ class Ball(pygame.sprite.Sprite):
         self.draw_ball()
 
     def draw_ball(self):
-        pygame.draw.circle(self.image, (0, 128, 255), (5, 5), 5)
+        pygame.draw.circle(self.image, (230, 249, 0), (5, 5), 5)
 
     def move_ball(self):
         self.rect.x += self.move_x * self.orientation_x
