@@ -23,12 +23,12 @@ class Ball(pygame.sprite.Sprite):
         self.rect.x += self.move_x * self.orientation_x
         self.rect.y += self.move_y * self.orientation_y
 
-        if self.rect.x >= 490 or self.rect.x <= 0:
+        if self.rect.right >= 500 or self.rect.left <= 0:
             self.orientation_x *= -1
             self.move_x += random.uniform(-0.5, 0.5)
 
 
-        if self.rect.y <= 0 or self.rect.y >= 490:
+        if self.rect.top <= 0 or self.rect.bottom >= 490:
             self.orientation_y *= -1
             self.move_y += random.uniform(-0.5, 0.5)
 
