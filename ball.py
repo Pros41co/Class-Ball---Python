@@ -9,8 +9,8 @@ class Ball(pygame.sprite.Sprite):
         super().__init__()
         self.orientation_x = 1
         self.orientation_y = 1
-        self.move_x = 5
-        self.move_y = 4
+        self.move_x = 9
+        self.move_y = 8
         self.image = pygame.Surface((10,10), pygame.SRCALPHA)
         self.rect = self.image.get_rect(midbottom=(250, 250))
 
@@ -32,8 +32,8 @@ class Ball(pygame.sprite.Sprite):
             self.orientation_y *= -1
             self.move_y += random.uniform(-0.5, 0.5)
 
-        self.move_x = max(2, min(self.move_x, 6))
-        self.move_y = max(2, min(self.move_y, 6))
+        self.move_x = max(2, min(self.move_x, 9))
+        self.move_y = max(2, min(self.move_y, 9))
 
 
 
